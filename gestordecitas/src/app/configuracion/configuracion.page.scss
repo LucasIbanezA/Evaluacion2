@@ -1,0 +1,27 @@
+
+ion-content {
+    padding: 16px;
+  }
+  
+
+  ion-item {
+    margin-bottom: 16px;
+  }
+  
+  ion-toggle {
+    --handle-background: #3880ff; 
+    --handle-background-checked: #4c8dff;
+  }
+  
+
+  ion-button {
+    margin-top: 16px;
+    --border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  ion-button[color="danger"] {
+    --background: #eb445a;
+    --background-hover: #f25470;
+  }
+  

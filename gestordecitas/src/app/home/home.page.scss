@@ -1,0 +1,33 @@
+.no-citas {
+  text-align: center;
+  color: gray;
+  margin-top: 20px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+ion-list {
+  margin-top: 10px;
+}
+
+ion-item {
+  --padding-start: 16px;
+  --inner-padding-end: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+ion-label p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.author {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+ion-fab-button {
+  --background: #3880ff; 
+}

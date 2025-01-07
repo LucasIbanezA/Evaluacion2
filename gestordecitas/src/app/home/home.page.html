@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Citas</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="navegarAConfiguracion()">
+        <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="citas.length === 0" class="no-citas">
+    <p>No hay citas disponibles</p>
+  </div>
+
+  <ion-list *ngIf="citas.length > 0">
+    <ion-item *ngFor="let cita of citas">
+      <ion-label>
+        <p>{{ cita.texto }}</p>
+        <p class="author">{{ cita.autor }}</p>
+      </ion-label>
+      <ion-button color="danger" slot="end" (click)="eliminarCita(cita.id)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button color="primary" (click)="navegarAGestionar()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
